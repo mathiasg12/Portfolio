@@ -101,7 +101,7 @@ p{
 section{
     margin: 100px auto;
 }
-.welcomingMessage{
+.welcomingMessage,.aboutme{
     background-color: rgba(255,255,255, 0.6);
     padding: 10px;
     text-align: left;
@@ -127,9 +127,6 @@ section{
     flex-direction: column;
     align-items: center;
 }
-.aboutme{
-    background-color: rgba(255,255,255, 1);
-}
 .aboutme p{
     max-width: 300px;
 }
@@ -139,7 +136,6 @@ section{
     flex-direction: column;
     align-items: center;
     margin: 50px auto;
-    background-color: white;
     padding-bottom: 20px;
     box-shadow: 6px 11px 20px 9px #121413;
     min-height: 670px;
@@ -192,7 +188,6 @@ img{
     align-items: center;
 }
 .email{
-    font-size: 1.2em;
     font-weight: bold;
     margin: 10px 0;
 }
@@ -201,9 +196,13 @@ img{
         min-width: 600px;
         width: 600px;
     }
+    .logo{
+        font-size: 60px;
+    }
     /*Home Page*/
     .card{
         max-width: 800px;
+        min-height: 780px;
     }
     .links{
         flex-direction: row;
@@ -212,6 +211,9 @@ img{
         max-width: 400px;
     }
     /*contact Page*/
+    .contactMe{
+        margin-top: 200px;
+    }
     .contactMe p{
         max-width:  300px;
     }
