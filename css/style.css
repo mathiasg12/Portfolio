@@ -135,6 +135,17 @@ section {
   padding: 10px 0 20px 40px;
   max-width: 250px;
 }
+svg{
+  display: block;
+  height: 50px;
+  margin: 10px 15px;
+}
+.svg{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px auto;
+}
 .h1Wm {
   font-size: 90px;
   margin: 8px 0 5px 0;
