@@ -1,250 +1,298 @@
 @font-face {
-    font-family: SwanseaBold;
-    src: url(/fonts/SwanseaBold-D0ox.ttf);
+  font-family: SwanseaBold;
+  src: url(/fonts/SwanseaBold-D0ox.ttf);
 }
 @font-face {
-    font-family: Roboto;
-    src: url(/fonts/Roboto-Regular.ttf);
+  font-family: Roboto;
+  src: url(/fonts/Roboto-Regular.ttf);
 }
 @font-face {
-    font-family: kimball;
-    src: url(/fonts/KimballBoldDemoHeavy-qdEl.ttf);
+  font-family: kimball;
+  src: url(/fonts/KimballBoldDemoHeavy-qdEl.ttf);
 }
-h1,h2,h3,h4, header div, a{
-    font-family: kimball;
+h1,
+h2,
+h3,
+h4,
+header div,
+a {
+  font-family: kimball;
 }
-.logo{
-    font-family: SwanseaBold;
+.logo {
+  font-family: SwanseaBold;
 }
-h1{
-    text-align: center;
-    font-size: 2.5em;
-    margin: 10px auto;
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin: 10px auto;
 }
-h2{
-    font-size: 2em;
+h2 {
+  font-size: 2em;
 }
-h3{
-    font-size: 1.5em;
+h3 {
+  font-size: 1.5em;
 }
-p{
-    font-size: 1.2em;
+p {
+  font-size: 1.2em;
 }
-body{
-    margin:0;
-    background-image: linear-gradient(#85FAD0 20%, #fff564);
-    min-height: 100vh;
-    overflow-x: hidden;
+body {
+  margin: 0;
+  background-image: linear-gradient(#85fad0 20%, #fff564);
+  min-height: 100vh;
+  overflow-x: hidden;
 }
-main{
-    min-height: 80vh;
-    max-width: 100vw;
+main {
+  min-height: 80vh;
+  max-width: 100vw;
 }
-header{
-    top: 0;
-    padding: 10px 10px 0 10px;
-    position: sticky;
-    background-color: black;
-    color: white; 
-    min-height: 80px;
-    max-width: 100vw;
-    display: flex;
-    justify-content: center;
+header {
+  top: 0;
+  padding: 10px 10px 0 10px;
+  position: sticky;
+  background-color: black;
+  color: white;
+  min-height: 80px;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
 }
-header div{
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    min-width: 80vw;
+header div {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  min-width: 80vw;
 }
-.contact_btn{
-    color: black;
-    background-color: white ;
-    border-radius: 20% 0% 20% 0%;
-    padding: 2px 5px 2px 5px;
+.contact_btn {
+  color: black;
+  background-color: white;
+  border-radius: 20% 0% 20% 0%;
+  padding: 2px 5px 2px 5px;
+  font-size: 20px;
+}
+@keyframes logo {
+  0% {
+  }
+  100% {
+    color: rgb(163, 4, 255);
+  }
+}
+@keyframes hover {
+  0% {
     font-size: 20px;
+  }
+  100% {
+    font-size: 25px;
+    color: rgb(163, 4, 255);
+  }
 }
-@keyframes logo{
- 0% {}
- 100% { color: rgb(163, 4, 255);} 
+.logo:hover,
+.logo:focus {
+  animation: logo 1s forwards;
+  animation-delay: 0.2s;
 }
-@keyframes hover{
-    0% {font-size: 20px;}
-    100% {font-size: 25px; color: rgb(163, 4, 255);}  
+.contact_btn:hover,
+.contact_btn:focus {
+  animation: hover 1s forwards;
+  animation-delay: 0.2s;
 }
-.logo:hover,.logo:focus{
-    animation:logo 1.0s forwards;
-    animation-delay: 0.2s; 
+header a {
+  text-decoration: none;
+  color: white;
 }
-.contact_btn:hover,.contact_btn:focus{
-    animation: hover 1.0s forwards;
-    animation-delay: 0.2s; 
+.logo {
+  font-size: 50px;
+  text-align: center;
+  width: 100vw;
+  align-self: center;
 }
-header a{
-    text-decoration: none;
-    color: white;
+footer {
+  background-color: black;
+  padding: 20px 10px 20px 10px;
+  min-height: 50px;
 }
-.logo{
-    font-size: 50px;
-    text-align: center;
-    width: 100vw;
-    align-self: center;
-    }
-footer{
-    background-color: black;
-    padding: 20px 10px 20px 10px;
-    min-height: 50px;    
-}
-footer p{
-    margin: 0;
-    color: white;
-    width:  fit-content;
+footer p {
+  margin: 0;
+  color: white;
+  width: fit-content;
 }
 /*Home Page*/
-p{
-    font-family: Roboto;
-    width: 70vw;
+p {
+  font-family: Roboto;
+  width: 70vw;
 }
-section{
-    margin: 100px auto;
+section {
+  margin: 100px auto;
 }
-.welcomingMessage,.aboutme{
-    background-color: rgba(255,255,255, 0.6);
-    padding: 10px;
-    text-align: left;
-    max-width: 400px;
-    border-radius: 10%;
-
+.welcomingMessage,
+.aboutme {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+  text-align: left;
+  max-width: 400px;
+  border-radius: 10%;
 }
-.welcomingMessage{
-    padding: 10px 0 20px 40px;
-    max-width: 250px;
+.welcomingMessage {
+  padding: 10px 0 20px 40px;
+  max-width: 250px;
 }
-.h1Wm{
-    font-size: 90px;
-    margin: 8px 0 5px 0;
-    width: fit-content;
-    height: 80px;
+.h1Wm {
+  font-size: 90px;
+  margin: 8px 0 5px 0;
+  width: fit-content;
+  height: 80px;
 }
-.h2Wm{
-    margin:  8px 0 5px 4px; 
+.h2Wm {
+  margin: 8px 0 5px 4px;
 }
-.h3Wm{
-    max-width: 240px;
-    margin: 8px 0 5px 4px;
+.h3Wm {
+  max-width: 240px;
+  margin: 8px 0 5px 4px;
 }
-.aboutme,.portCon{
-    padding: 50px 0 50px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.aboutme,
+.portCon {
+  padding: 50px 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.aboutme p{
-    max-width: 300px;
+.aboutme p {
+  max-width: 300px;
 }
-.card{
-    max-width: 90vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 50px auto;
-    padding-bottom: 20px;
-    box-shadow: 6px 11px 20px 9px #121413;
-    min-height: 670px;
-    border-radius: 10%;
+.card {
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+  padding-bottom: 20px;
+  box-shadow: 6px 11px 20px 9px #121413;
+  min-height: 670px;
+  border-radius: 10%;
 }
-@keyframes linksHover{
-    0% {}
-    100% {font-size: 30px; height: 40px;} 
-   }
-.links{
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
+@keyframes linksHover {
+  0% {
+  }
+  100% {
+    font-size: 30px;
+    height: 40px;
+  }
 }
-.linkToGit,.linkToSite{
-    padding: 10px 5px 5px 5px;
-    text-decoration: none;
-    font-size: 20px;
-    color:white;
-    background-color:#C24E0A;
-    border-radius: 10%;
-    min-width: 132px;
-    text-align: center;
-    margin: 10px 20px;
-    height: 30px;
+.links {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
 }
-.linkToGit:hover,.linkToSite:hover, .linkToSite:focus, .linksToGit:focus{
-    animation:linksHover 1.0s forwards;
-    animation-delay: 0.2s; 
+.linkToGit,
+.linkToSite {
+  padding: 10px 5px 5px 5px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  background-color: #c24e0a;
+  border-radius: 10%;
+  min-width: 132px;
+  text-align: center;
+  margin: 10px 20px;
+  height: 30px;
 }
-.linkToSite{
-    background-color: rgb(85, 0, 116);
+.linkToGit:hover,
+.linkToSite:hover,
+.linkToSite:focus,
+.linksToGit:focus {
+  animation: linksHover 1s forwards;
+  animation-delay: 0.2s;
 }
-.card h3{
-    text-align: center;
+.linkToSite {
+  background-color: rgb(85, 0, 116);
 }
-img{
-    width: 100%;
-    min-height: 250px;
-    border-radius: 10% 10% 0 0;
+.card h3 {
+  text-align: center;
+}
+img {
+  width: 100%;
+  min-height: 250px;
+  border-radius: 10% 10% 0 0;
 }
 /*Contact page*/
-.contactMe{
-    display: flex;
-    flex-direction: column;
-    max-width: 600px !important;
-    background-color:rgba(255,255,255, 0.8) ;
-    padding: 30px;
-    border-radius: 10%;
-    align-items: center;
+.contactMe {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px !important;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 10%;
+  align-items: center;
 }
-.email{
-    font-weight: bold;
-    margin: 10px 0;
+.email {
+  font-weight: bold;
+  margin: 10px 0;
 }
-.link{
-    background-color: #487035;
+.link {
+  background-color: #487035;
 }
-@media only screen and (min-width: 600px){
-    header div{
-        min-width: 600px;
-        width: 600px;
+@media only screen and (min-width: 600px) {
+  @keyframes hoverBig {
+    0% {
+      font-size: 25px;
     }
-    .logo{
-        font-size: 60px;
-        margin-top: 20px;
+    100% {
+      font-size: 30px;
+      color: rgb(163, 4, 255);
     }
-    /*Home Page*/
-    #portH2{
-        font-size: 3em;
-    }
-    .h1Wm{
-        font-size:120px;
-        margin: 8px 0 5px 0;
-        width: fit-content;
-        height: 110px;
-    }
-    .welcomingMessage{
-        padding: 10px 0 20px 40px;
-        max-width: 400px;
-    }
-    .card{
-        max-width: 800px;
-        min-height: 780px;
-    }
-    .links{
-        flex-direction: row;
-    }
-    .card p{
-        max-width: 400px;
-    }
-    /*contact Page*/
-    .contactMe{
-        margin-top: 100px;
-    }
-    .contactMe p{
-        max-width:  300px;
-    }
+  }
+  .contact_btn {
+    font-size: 25px;
+  }
+  .contact_btn:hover,
+  .contact_btn:focus {
+    animation: hoverBig forwards 1s;
+    animation-delay: 0.2s;
+  }
+  header div {
+    min-width: 600px;
+    width: 600px;
+  }
+  .logo {
+    font-size: 60px;
+    margin-top: 20px;
+  }
+  /*Home Page*/
+  #portH2 {
+    font-size: 3em;
+  }
+  .h1Wm {
+    font-size: 120px;
+    margin: 8px 0 5px 0;
+    width: fit-content;
+    height: 110px;
+  }
+  .welcomingMessage {
+    padding: 10px 0 20px 40px;
+    max-width: 400px;
+  }
+  .card {
+    max-width: 800px;
+    min-height: 780px;
+  }
+  .links {
+    flex-direction: row;
+  }
+  .card p {
+    max-width: 400px;
+  }
+  /*contact Page*/
+  .contactMe {
+    margin-top: 100px;
+  }
+  .contactMe p {
+    max-width: 300px;
+  }
 }
-
+@media only screen and (max-width: 250px) {
+  p {
+    font-size: 0.9em;
+  }
+  .h1Wm {
+    font-size: 70px;
+  }
+}
